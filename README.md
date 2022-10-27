@@ -1,2 +1,2 @@
 # s2-ktu-cprogram
-c program to convert decimal number to binary
+this page contain some c programs which is asked in ktu previous exams
