@@ -1,0 +1,48 @@
+#include <stdio.h>
+int a();
+int b();
+int c();
+int main()
+{ int x,n,y,z,r,w,result;
+scanf("%d%d",&n,&r);
+z=n-r;
+x=a(n);
+w=c(z);
+y=b(r);
+result=x/(w*y);
+printf("%d",result);
+}
+int a(int n)
+{
+    if(n==1||n==0)
+    {
+        return 1;
+    }
+    else
+    {return n*a(n-1);
+    }
+}
+int b(int r)
+{
+    if(r==1||r==0)
+    {
+        return 1;
+    }
+    else
+    {
+    return r*b(r-1);
+    }
+}
+int c(int m)
+{
+    if(m==1||m==0)
+    {
+        return 1;
+    }
+    else
+    {
+    return (m*c(m-1));
+    }
+}
+
+
